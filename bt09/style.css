@@ -1,0 +1,60 @@
+:root {
+    /* Màu thương hiệu */
+    --brand-red: #a61d2d;
+    --brand-red-hover: #8e1826;
+    --brand-red-border: #a61d2d;
+
+    --brand-black: #1f1f1f;
+    --brand-black-hover: #111111;
+    --brand-gray: #6c757d;
+}
+
+.card {
+    border-top: 4px solid #a61d2d;
+    border-radius: 14px;
+}
+
+/* Ghi đè nút primary của Bootstrap -> đỏ sẫm */
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--brand-red);
+    --bs-btn-border-color: var(--brand-red-border);
+
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--brand-red-hover);
+    --bs-btn-hover-border-color: var(--brand-red-hover);
+
+    --bs-btn-focus-shadow-rgb: 166, 29, 45;
+
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--brand-red-hover);
+    --bs-btn-active-border-color: var(--brand-red-hover);
+
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--brand-red);
+    --bs-btn-disabled-border-color: var(--brand-red);
+}
+
+/* Ghi đè nút outline-secondary -> đen */
+.btn-outline-secondary {
+    --bs-btn-color: var(--brand-black);
+    --bs-btn-border-color: var(--brand-black);
+
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--brand-black);
+    --bs-btn-hover-border-color: var(--brand-black);
+
+    --bs-btn-focus-shadow-rgb: 31, 31, 31;
+
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--brand-black-hover);
+    --bs-btn-active-border-color: var(--brand-black-hover);
+
+    --bs-btn-disabled-color: var(--brand-gray);
+    --bs-btn-disabled-border-color: var(--brand-gray);
+}
+
+/* Text brand */
+.text-brand {
+    color: var(--brand-red);
+}
